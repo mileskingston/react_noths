@@ -1,0 +1,42 @@
+.basket {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .basket {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.basket > h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333333;
+}
+@media screen and (min-width: 768px) {
+  .basket > h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+
+.basket .products {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .basket .products {
+    margin-bottom: 20px;
+  }
+}
+
+.basket .products th {
+  padding-bottom: 10px;
+  text-align: left;
+  font-weight: 600;
+}
+.basket .products tbody > tr > td {
+  padding-bottom: 5px;
+}
