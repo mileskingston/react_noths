@@ -59,34 +59,3 @@
   margin-bottom: 15px;
   line-height: 1.2;
 }
-
-.product_summary .add_to_basket {
-  position: absolute;
-  display: inline-block;
-  height: 40px;
-  width: calc(100% - 40px);
-  background-color: #0a89af;
-  bottom: 10px;
-  left: 20px;
-  right: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-  color: #fff;
-  border-radius: 5px;
-  border: 0;
-  font-weight: 600;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .product_summary .add_to_basket {
-    width: calc(100% - 60px);
-    bottom: 15px;
-    left: 30px;
-    right: 15px;
-  }
-}
-
-.product_summary .add_to_basket:hover {
-  opacity: 0.8;
-}

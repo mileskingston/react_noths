@@ -2,9 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Provider } from "react-redux";
 import configureMockStore from 'redux-mock-store';
-import App from './App';
+import Products from './Products';
 
-describe('App', () => {
+describe('Products', () => {
   let wrapper;
   
   beforeEach(() => {
@@ -15,13 +15,18 @@ describe('App', () => {
         total: 50
       }
     };
+    const data = [{
+      'title': 'Cuff links',
+      'price': '50',
+      'image_url': '../images/cufflinks.jpg'
+    }];
     const store = mockStore(initData);
     wrapper = shallow(
-      <App store={store} />
+      <Products data={data} />
     );
   });
 
   it('renders container', () => {
-    expect(wrapper.find('.app').length).toBe(1);
+    expect(wrapper.find('.product_summary_collection').length).toBe(1);
   });
 });

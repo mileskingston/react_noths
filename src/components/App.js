@@ -1,7 +1,8 @@
 import React from 'react';
-import products from '../productData';
 import Product from './Product';
 import Basket from './Basket';
+import Products from './Products';
+import ProductsData from '../productData';
 
 const App = () => (
   <div className="app app__container">
@@ -11,12 +12,7 @@ const App = () => (
       </aside>
       
       <section className="main container__column">
-        <section className="product_summary_collection container__row">
-          {products && 
-            products.map((product, index) =>
-              <Product key={index} data={product} />
-          )}
-        </section>
+        <Products data={ProductsData} />
       </section>
     </div>
   </div>

@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addProduct } from '../actions/index';
+import Button from './Button';
 
 import './Product.css';
 
@@ -25,18 +26,19 @@ class Product extends PureComponent {
           <img className="product_image" src={props.data.image_url} alt={props.data.title} />
           <h2 className="product_title">{props.data.title}</h2>
           <div className="product_price">{props.data.price}</div>
-          <button
-            type="button"
-            className="button add_to_basket"
+          <Button
+            classes="add_to_basket"
             onClick={() => { this.addProduct(); }}
           >
             Add to basket
-          </button>
+          </Button>
         </div>
       </div>
     );
   }
 };
+
+Product.displayName = 'Product';
 
 Product.propTypes = {
   data: PropTypes.shape({
@@ -53,4 +55,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, { addProduct })(Product);
-

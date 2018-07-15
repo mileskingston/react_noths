@@ -1,16 +1,13 @@
-import cuffLinks from './images/cufflinks.jpg';
-import tshirt from './images/tshirt.jpg';
-
 const products = [
     {
       "title": "Personalised cufflinks",
       "price": "45.00",
-      "image_url": cuffLinks    
+      "image_url": "http://localhost:8080/src/images/cufflinks.jpg"    
     },
     {
       "title": "Kids T-shirt",
       "price": "19.54",
-      "image_url": tshirt
+      "image_url": "http://localhost:8080/src/images/tshirt.jpg"
     }
 ];
 

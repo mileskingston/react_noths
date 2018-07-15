@@ -15,10 +15,10 @@
 ## Additional things I would have done
 
 * Create layout components e.g. Products/ Grid
-* Create smaller, more reusable components such as Button, Price and Image
+* Create smaller, more reusable components such Price and Image
 * Implement styled-components and or style pre-processor SASS
 * Auto prefixing
-* Fix tests
+* Accessibility
 
 ## How to run
 

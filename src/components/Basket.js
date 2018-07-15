@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import { index } from '../reducers'
 import './Basket.css';
 
 class Basket extends PureComponent {
@@ -29,8 +30,8 @@ class Basket extends PureComponent {
                 .filter((item, index, array) => array.indexOf(item) === index)
                 .map((value, index) =>
                   <tr key={index}>
-                    <td>{value}</td>
-                    <td>{this.countProductType(value)}</td>
+                    <td className="item">{value}</td>
+                    <td className="quantity">{this.countProductType(value)}</td>
                   </tr>
                 )
             }
